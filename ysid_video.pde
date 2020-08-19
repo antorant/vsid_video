@@ -260,7 +260,7 @@ void drawShapeFrame(){
   image(figureImg, positionX, positionY, figureWidth, figureHeight);
   
   if (isRendering == true) {
-    saveFrame(nf(thisShape, 2)+"-"+nf(frameCounter, 2)+".png");
+    saveFrame("_render/"+nf(thisShape, 2)+"-"+nf(frameCounter, 2)+".png");
   }
   
   // update counters
@@ -314,7 +314,7 @@ void drawIntroFrame(){
   image(figureImg, positionX, positionY, figureWidth, figureHeight);
   
   if (isRendering == true) {
-    saveFrame(nf(thisIntroStep, 2)+"-"+nf(frameCounter, 2)+".png");
+    saveFrame("_render/"+nf(thisIntroStep, 2)+"-"+nf(frameCounter, 2)+".png");
   }
   
   // update counters
